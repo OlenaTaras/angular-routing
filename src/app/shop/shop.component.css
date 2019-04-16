@@ -1,0 +1,26 @@
+.category {
+  display: flex;
+}
+
+.category > * {
+  margin: 50px;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100px
+}
+
+.category-items-container {
+  width: 40%;
+}
+
+.category-items-container .ui-table-wrapper table {
+  width: 100%
+}
+
+.category-label {
+  cursor: pointer;
+}

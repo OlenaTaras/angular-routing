@@ -1,0 +1,8 @@
+.table-header {
+  font-weight: bold;
+}
+
+td[class^='column-'] {
+  width: 30%;
+}
+

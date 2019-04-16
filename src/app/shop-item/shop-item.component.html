@@ -1,0 +1,17 @@
+
+<p-table [value]="categories">
+  <ng-template pTemplate="header">
+    <tr class="table-header">
+      <td class="column-title">Title</td>
+      <td class="column-price">Price</td>
+      <td class="column-description">Description</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-category>
+    <tr class="table-row">
+      <td class="column-title">{{category.title}}</td>
+      <td class="column-price">{{category.price}}</td>
+      <td class="column-description">{{category.description}}</td>
+    </tr>
+  </ng-template>
+</p-table>
