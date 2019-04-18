@@ -33,7 +33,7 @@ export class ShopComponent implements OnInit {
   //   this.router.navigate(['category', category], {relativeTo: this.route})
   // }
 
-  private transformCategories(categories) {
+  public transformCategories(categories) {
     return categories.map(item => {
       return { value: item, label: item };
     });

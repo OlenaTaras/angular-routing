@@ -6,7 +6,11 @@ import {
   RouterModule,
   Routes
 } from '@angular/router';
-import { DropdownModule } from 'primeng/primeng';
+import {
+  DropdownModule,
+  InputTextareaModule,
+  InputTextModule
+} from 'primeng/primeng';
 import { HttpClientModule } from '@angular/common/http';
 import { ShopItemComponent } from './shop-item/shop-item.component';
 import { ShopComponent } from './shop/shop.component';
@@ -14,6 +18,8 @@ import { TableModule } from 'primeng/table';
 import { MenubarModule } from 'primeng/menubar';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateShopItemComponent } from './create-shop-item/create-shop-item.component';
+import { ButtonModule } from 'primeng/button';
 
 const routes: Routes = [
   {
@@ -23,6 +29,9 @@ const routes: Routes = [
   },
   {
     path: 'category/:category', component: ShopItemComponent
+  },
+  {
+    path: 'create', component: CreateShopItemComponent
   }
 ];
 
@@ -30,10 +39,14 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     ShopComponent,
-    ShopItemComponent
+    ShopItemComponent,
+    CreateShopItemComponent
   ],
   imports: [
     BrowserAnimationsModule,
+    InputTextModule,
+    ButtonModule,
+    InputTextareaModule,
     FormsModule,
     DropdownModule,
     MenubarModule,

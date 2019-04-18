@@ -1,0 +1,8 @@
+<div class="create-shop-item-container">
+  <input type="text" pInputText [(ngModel)]="newShopItem.title" placeholder="title"/>
+  <input type="text" pInputText [(ngModel)]="newShopItem.price" placeholder="price"/>
+  <textarea autoResize="autoResize" [rows]="5" [cols]="30" pInputTextarea [(ngModel)]="newShopItem.description" placeholder="description"></textarea>
+  <input type="text" pInputText [(ngModel)]="newShopItem.category" placeholder="category"/>
+  <input type="text" pInputText [(ngModel)]="newShopItem.subcategory" placeholder="subcategory"/>
+  <button pButton type="submit" label="Save shop item" (click)="saveNewShopItem(newShopItem)"></button>
+</div>
